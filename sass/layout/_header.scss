@@ -1,0 +1,28 @@
+.header {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+    &--brand {
+        display: inline-block;
+        width: 240px;
+        height: auto;
+        vertical-align: middle;
+        @include to(m) {
+            width: 180px;
+        }
+        &--link {
+            display: inline-block;
+        }
+    }
+    &--filters {
+        display: inline-block;
+        white-space: nowrap;
+        @include to(s) {
+            display: block;
+        }
+    }
+    &--form {
+        display: inline-block;
+    }
+}

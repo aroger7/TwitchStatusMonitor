@@ -1,0 +1,9 @@
+.form {
+    &-add-channel {
+        display: inline-block;
+        white-space: nowrap;
+        @include to(s) {
+            display: block;
+        }
+    }
+}

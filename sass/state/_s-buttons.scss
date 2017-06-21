@@ -1,0 +1,27 @@
+.button {
+    @include transition(color 0.2s);
+    &:hover {
+        color: $orange;
+    }
+    &--label {
+        @include transition(background-color 0.2s);
+        &-all {
+            .button-radio:checked+&,
+            &:hover {
+                background-color: rgba($black, 0.5);
+            }
+        }
+        &-online {
+            .button-radio:checked+&,
+            &:hover {
+                background-color: rgba(0, 255, 0, 0.8);
+            }
+        }
+        &-offline {
+            .button-radio:checked+&,
+            &:hover {
+                background-color: rgba(255, 0, 0, 0.8);
+            }
+        }
+    }
+}

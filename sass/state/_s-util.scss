@@ -1,0 +1,24 @@
+.fade {
+    @include transition(opacity 0.5s);
+}
+
+.slow-fade {
+    @include transition(opacity 1.0s);
+}
+
+.is-hidden {
+    display: none;
+}
+
+.is-invisible {
+    opacity: 0;
+}
+
+.is-collapsed {
+    height: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+}

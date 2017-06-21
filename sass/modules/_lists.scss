@@ -1,0 +1,25 @@
+.list {
+    display: block;
+    padding: 20px 20px 20px 20px;
+    @include to(xs) {
+        padding: 10px 10px 10px 10px;
+    }
+    &-channel {
+        padding: 0px;
+    }
+    &-row {
+        display: inline-block;
+    }
+    &-row>&--item {
+        display: inline-block;
+    }
+    &--item {
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+        &-s-collapse {
+            @include to(s) {
+                padding: 3px 3px 3px 3px;
+            }
+        }
+    }
+}

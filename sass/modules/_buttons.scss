@@ -1,0 +1,35 @@
+.button {
+    display: inline-block;
+    margin: 0px;
+    border: 0px;
+    padding: 10px;
+    align-items: stretch;
+    line-height: inherit;
+    font: 24px 'Open Sans', sans-serif;
+    @include to(s) {
+        font-size: 12px;
+    }
+    &-add {
+        background: rgba($black, 0.5);
+        color: rgba(255, 255, 255, 0.9);
+    }
+    &--label {
+        display: inline-block;
+        color: $twitch-purple;
+        text-align: center;
+        &-badge {
+            cursor: pointer;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: $white;
+            line-height: 60px;
+            @include to(s) {
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 12px;
+            }
+        }
+    }
+}

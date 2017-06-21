@@ -1,0 +1,15 @@
+// ----------------------------------------------------------------------
+
+  // Transitions
+
+// ----------------------------------------------------------------------
+
+// example: @include transition(background 1s ease-in-out 0);
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}

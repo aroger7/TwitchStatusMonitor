@@ -1,0 +1,34 @@
+//------------------------------------------------------------
+    //Colours
+//------------------------------------------------------------
+$white: #FFFFFF;
+$black: #000000;
+$orange: #FFA500;
+$blue: #003399;
+$light-blue: #0033FF;
+$light-grey: #D3D3D3;
+$grey: #808080;
+$red: #FF0000;
+$green: #00FF00;
+$crimson: #DC143C;
+$dodgerblue: #1E90FF;
+
+$link-color: #0275D8;
+$link-hover-color: #014c8c;
+$online: $green;
+$offline: $red;
+$non-existent: $white;
+
+$text-color: $black;
+
+//------------------------------------------------------------
+    //Brand Colours
+//------------------------------------------------------------
+
+$twitch-purple: #6441A4;
+
+//------------------------------------------------------------
+    //Breakpoints
+//------------------------------------------------------------
+$slicer-breakpoints: 0px 445px 768px 992px 1140px;
+$slicer-breakpoint-names: 'xs' 's' 'm' 'l' 'xl';

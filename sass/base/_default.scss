@@ -1,0 +1,45 @@
+@import "reset";
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: $twitch-purple;
+    min-width: 320px;
+}
+
+a {
+    color: $link-color;
+}
+
+a:hover {
+    color: $link-hover-color;
+}
+
+ul,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    >li {
+        padding: 0px 0px 0px 0px;
+    }
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+}

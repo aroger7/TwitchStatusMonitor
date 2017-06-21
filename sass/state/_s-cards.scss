@@ -1,0 +1,17 @@
+.card {
+    &--icon {
+        @include transition(color 0.2s);
+        &-click:hover {
+            cursor: pointer;
+        }
+        &-watch:hover {
+            color: $orange;
+        }
+        &-user:hover {
+            color: $dodgerblue;
+        }
+        &-delete:hover {
+            color: $crimson;
+        }
+    }
+}

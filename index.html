@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Twitch.tv Status Monitor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header id="header" class="header">
+        <a class="header--brand--link" href="https://www.twitch.tv/" target="_blank">
+            <img class="header--brand" src="http://res.cloudinary.com/dprf86vet/image/upload/v1480919789/Twitch_White_RGB_a0a8xf.png" />
+        </a>
+
+        <div class="header--filters">
+            <ul class="list list-row">
+                <li class="list--item list--item-s-collapse">
+                    <input type="radio" name="filter" value="All" checked="true" class="button-radio is-hidden" id="filter-all-button" />
+                    <label class="button--label button--label-badge button--label-all" for="filter-all-button">All</label>
+                </li>
+                <li class="list--item list--item-s-collapse">
+                    <input type="radio" name="filter" class="button-radio is-hidden" id="filter-online-button" />
+                    <label class="button--label button--label-badge button--label-online" for="filter-online-button">Online</label>
+                </li>
+                <li class="list--item list--item-s-collapse">
+                    <input type="radio" name="filter" class="button-radio is-hidden" id="filter-offline-button" />
+                    <label class="button--label button--label-badge button--label-offline" for="filter-offline-button">Offline</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="header--form">
+            <form class="form-add-channel">
+                <input type="text" placeholder="Add channel..." class="textbox textbox-low-opacity-phldr" id="add-channel-textbox" /><button id="add-channel-submit" class="button button-add" type="submit" value="Add">Add</button>
+            </form>
+        </div>
+    </header>
+    <div id="content">
+        <div class="section section-channels">
+            <div class="section-channels--list">
+                <h1 class="section-channels--list--msg-empty is-hidden is-invisible">Your channels are looking a little lonely :(</h1>
+                <ul id="channel-list-online" class="list list-channel">
+                </ul>
+                <ul id="channel-list-offline" class="list list-channel">
+                </ul>
+                <ul id="channel-list-other" class="list list-channel">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
